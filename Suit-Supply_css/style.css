@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;    
+    transition: 100ms;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* background */
+
+body {
+    /* overflow: hidden; */
+    background-image: url(../imgs/2222.jpg);
+    height: 100vh;              
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* start scroll bar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff73;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ffffff;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: #3f3f3f;
+}
+/* end scroll bar */
+
+
+/* start navbar */
+.navbar-brand img {
+    border: 1px solid black;
+    border-radius: 100px;
+}
+.navbar-brand  {
+font-size: 25px;
+font-family: serif;
+}
+
+.navbar-toggler {
+    border: none;
+    
+}
+
+
+.nav-link{
+    font-weight: 400;
+    color: black;
+    font-size: 20px;
+}
+
+.nav-link:focus{
+border-bottom: 3px solid #1eb3ca;
+}
+
+
+
+.navbar ul {
+    display: flex;
+
+    
+}
+
+.navbar ul li a  {
+margin-left: 48px;
+}
+.navbar ul li a  .btn {
+    border-radius: 3px;
+    padding: 7px 20px;
+}
+
+/* end navbar */
+
+section .title{
+    margin-top: 120px;
+    position: relative;
+}
+
+
+section .title h3{
+    -webkit-text-stroke: #3f3f3f 1px;
+}
+
+section .title p{
+    font-size: 18px;
+    word-spacing: 2px;
+}
+
+section .title .btn{
+    padding: 10px 35px;
+}
+
+/* end title and description */
+
+
+
+/* start img in title */
+section .title .ads img{
+    height: 200px;
+    width: 230px;
+    border: white solid;
+    border-width: 3px 3px 25px 3px ;
+    box-shadow: 10px -5px 20px 5px black;
+}
+
+
+
+.logo1 {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    rotate: 10deg;
+    animation: 500ms logo1Move infinite alternate-reverse;
+    
+}
+@keyframes logo1Move {
+    from{
+        rotate: 10deg;
+    }
+    to{
+        rotate: 8deg;
+    }
+}
+
+
+
+.logo2 {
+    position: absolute;
+    top: -30px;
+    right: 280px;
+    rotate: -10deg;
+    animation: 500ms logo2Move infinite alternate-reverse;
+    
+}
+@keyframes logo2Move {
+    from{
+        rotate: -10deg;
+    }
+    to{
+        rotate: -8deg;
+    }
+}
+
+
+.logo3 {
+    position: absolute;
+    top: 200px;
+    right: -50px;
+    rotate: 3deg;
+    animation: 500ms logo3Move infinite alternate-reverse;
+    
+}
+@keyframes logo3Move {
+    from{
+        rotate: 3deg;
+    }
+    to{
+        rotate: 1deg;
+    }
+}
+
+
+.logo4 {
+    position: absolute;
+    top: 250px;
+    right: 300px;
+    rotate: -5deg;
+    animation: 500ms logo4Move infinite alternate-reverse;
+    
+}
+@keyframes logo4Move {
+    from{
+        rotate: -5deg;
+    }
+    to{
+        rotate: -3deg;
+    }
+}
+/* end img in title */
+
+
+
+
+/* start (992px -> medium) for tablet/small labs */
+@media (max-width:992px) {
+    
+    .navbar ul li a {
+        margin-left: 0px;
+text-align: right;
+    }
+
+
+section .title .ads img{
+    height: 180px;
+    width: 210px;
+    border: white solid;
+    border-width: 3px 3px 25px 3px ;
+    box-shadow: 10px -5px 20px 5px black;
+}
+
+
+
+.logo1 {
+    position: none;
+
+    rotate: 0deg;
+    animation: 500ms logo11Move infinite alternate-reverse;
+    
+}
+@keyframes logo11Move {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: -1deg;
+    }
+}
+
+
+
+.logo2 {
+    position: absolute;
+    top: 200px;
+    right: -50px;
+    rotate: 0deg;
+    animation: 500ms logo22Move infinite alternate-reverse;
+    
+}
+@keyframes logo22Move {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 1deg;
+    }
+}
+
+
+.logo3 {
+    display: none;
+}
+
+
+.logo4 {
+    display: none;
+}
+
+}
+
+
+/* end (992px -> medium)  */
+
+
+/* start (767px -> small)  for phone */
+
+@media (max-width:767px) {
+
+    body {
+        /* overflow: hidden; */
+        background-image: url(../imgs/10111462.jpg);
+        /* background-color: #3f3f3f; */
+        /* /* height: 100vh;  */
+        /* width: 100%; */ 
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .navbar ul li a {
+        margin-left: 0px;
+text-align: right;
+    }
+section .title .ads img{
+display: none;  
+}
+
+section .title h3,p,.btn{
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+section .title h3{
+    font-size: 30px;
+    font-weight: bolder; 
+
+}
+section .title p{
+    font-size: 12px;
+    margin-top: 30px;
+    /* display: none; */
+}
+section .title .btn{
+    margin-top: 50px;
+}
+
+
+}
+/* end (767px -> medium)  */
